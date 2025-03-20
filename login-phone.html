@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Original Gym</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles communs */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #231F20;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            transition: color 0.6s ease;
+        }
+
+        .nav-links a:hover {
+            color: #d81818;
+        }
+
+        section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .login-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .login-form input[type="submit"] {
+            background: #AC121C;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background: #e60000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px;
+            background: #111;
+            position: fixed;
+            bottom: 0; left: 0;
+            width: 100%;
+        }
+
+        .social-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .social-column a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: italic;
+            transition: color 0.7s ease;
+        }
+
+        .social-column a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-links a:hover {
+            color: #e60000;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="sign_up.html">Inscription</a>
+            <a href="login.html">Connexion</a>
+            <a href="#">Boutique</a>
+        </nav>
+    </header>
+
+    <section id="connexion-phone">
+        <h2>Connexion avec Téléphone</h2>
+        <form class="login-form" action="#" method="post">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Se connecter">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Original Gym - Tous droits réservés.</p>
+        <div class="social-container">
+            <div class="social-column">
+                <a href="https://www.instagram.com/OriginalGym" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram Salle">
+                    Instagram Salle
+                </a>
+                <a href="https://www.instagram.com/Vigou" target="_blank">
+                    <img src="images/instagram-icon.png" alt="Instagram Propriétaire">
+                    Instagram Propriétaire
+                </a>
+            </div>
+            <div class="social-column">
+                <a href="https://www.facebook.com/OriginalGym" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook Salle">
+                    Facebook Salle
+                </a>
+                <a href="https://www.facebook.com/Vigou" target="_blank">
+                    <img src="images/facebook-icon.png" alt="Facebook Propriétaire">
+                    Facebook Propriétaire
+                </a>
+            </div>
+        </div>
+        <p>contact@originalgym.com</p>
+    </footer>
+</body>
+</html>
